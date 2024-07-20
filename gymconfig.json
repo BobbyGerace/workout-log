@@ -1,1 +1,10 @@
-{"databaseFile":"./.gym.db","editor":"nvim","editorArgs":[],"workoutDir":"./workouts","unitSystem":"imperial","e1rmFormula":"brzycki","afterSaveGitAction":"none","locale":"en-US"}
+{
+  "databaseFile": "./.gym.db",
+  "editor": "nvim",
+  "editorArgs": [],
+  "workoutDir": "./workouts",
+  "unitSystem": "imperial",
+  "e1rmFormula": "brzycki",
+  "afterSaveGitAction": "commit-push",
+  "locale": "en-US"
+}
