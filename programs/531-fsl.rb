@@ -24,8 +24,9 @@ def ceil5(num)
   (num / 5.0).ceil * 5
 end
 
+# Format date like "Saturday, January 1, 2022"
 frontmatter = <<~FRONTMATTER.strip
-  date: #{Time.now.strftime('%Y-%m-%d')}
+  date: #{Time.now.strftime('%A, %B %-d, %Y')}
   program: 5/3/1 FSL
   week: #{week}
   training-max: #{max}
