@@ -89,7 +89,7 @@ workouts = {
     # Deadlift
     #{sets}
 
-    # SSB Squat
+    # Bulgarian Split Squat
     // ?x8-12 3 sets
 
     # Single Leg Calf Raise
