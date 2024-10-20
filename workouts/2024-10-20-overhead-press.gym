@@ -1,0 +1,25 @@
+---
+name: Overhead Press
+date: Sun, Oct 20, 2024
+---
+
+# Behind The Neck Press
+95x12,12,12,12
+
+# Barbell Row
+135x12,12,11,10
+
+# Push-Up
+45x12,14,9
+
+& Lat Pulldown
+190x15,12,10
+
+# Dumbbell Curl
+25x15,10,12
+20x5 { drop-set: true }
+15x5 { drop-set: true }
+
+& Triceps Rope Push-Down
+100x12,9,10
+55x12 { drop-set: true }
