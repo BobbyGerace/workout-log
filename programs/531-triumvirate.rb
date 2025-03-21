@@ -76,6 +76,8 @@ workouts = {
     # Walking Lunge
     // 3-5 sets
 
+    # Conditioning
+    // pick something hard and do it for 10-15 min
   SQUAT
   "bench" => <<~BENCH,
     ---
@@ -109,6 +111,9 @@ kkk
 
     # Hanging Leg Raise
     // 5x10
+
+    # Conditioning
+    // pick something hard and do it for 10-15 min
   DEADLIFT
   "press" => <<~PRESS,
     ---
