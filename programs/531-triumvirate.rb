@@ -48,7 +48,7 @@ end
 # Format date like "Saturday, January 1, 2022"
 frontmatter = <<~FRONTMATTER.strip
   date: #{Time.now.strftime('%A, %B %-d, %Y')}
-  program: 5/3/1 FSL
+  program: 5/3/1 Triumvirate
   week: #{week}
   training-max: #{max}
   deload: #{week == "4" ? "true" : "false"}
