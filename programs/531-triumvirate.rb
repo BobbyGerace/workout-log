@@ -88,13 +88,13 @@ workouts = {
     # Bench Press
     #{sets}
 
-    # Dumbbell Bench Press
+    # Dumbbell Incline Bench
     // 5x10
 
-    # Dumbbell Row
+    # Inverted Row
     // 5x10
 
-    # Barbell Curl
+    # Dumbbell Curl
     // 3x20
   BENCH
   "deadlift" => <<~DEADLIFT,
@@ -105,12 +105,15 @@ workouts = {
 
     # Deadlift
     #{sets}
-kkk
+
     # Bulgarian Split Squat
     // 5x10
 
     # Hanging Leg Raise
-    // 5x10
+    // 3x10
+
+    # Single Leg Calf Raise
+    // 3x10
 
     # Conditioning
     // pick something hard and do it for 10-15 min
