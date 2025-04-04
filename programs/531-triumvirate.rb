@@ -109,10 +109,10 @@ workouts = {
     # Bulgarian Split Squat
     // 5x10
 
-    # Hanging Leg Raise
+    # Single Leg Calf Raise
     // 3x10
 
-    # Single Leg Calf Raise
+    & Hanging Leg Raise
     // 3x10
 
     # Conditioning
