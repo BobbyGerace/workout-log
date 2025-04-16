@@ -1,0 +1,25 @@
+---
+name: Bench Press
+date: Wednesday, April 16, 2025
+program: 5/3/1 Triumvirate
+week: 4
+training-max: 205
+deload: true
+---
+
+# Bench Press
+85x5
+105x5
+125x5
+
+# Dumbbell Incline Bench
+40x10
+
+& Inverted Row
+BWx10,10,10
+
+# Band Curl
+{ band: mini } x30,30,30
+
+# Band Triceps
+{ band: mini } x30,30,30
