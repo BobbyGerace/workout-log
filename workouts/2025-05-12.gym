@@ -1,0 +1,24 @@
+---
+name: Squat
+date: Monday, May 12, 2025
+program: Transmission
+week: 1
+percentage: 72.5
+training-max: 275
+deload: false
+---
+
+# SSB Squat
+200x5,5,5,5,5
+
+# Romanian Deadlift
+245x10,10,10
+
+# Single Leg Calf Raise
+BWx18,15,14
+
+# Treadmill
+// Too easy. Next time just start at 10
+5:00 { incline: 7, speed: 3 }
+3:00 { incline: 8, speed: 3 }
+2:00 { incline: 10, speed: 3 }
