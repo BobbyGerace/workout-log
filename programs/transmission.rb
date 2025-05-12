@@ -4,19 +4,7 @@ lift = ARGV[0]
 week = ARGV[1]
 
 readme = <<~README
-This is a variation of 5/3/1 which emphasizes recovery
-and simplicity. The assistance exercises here are 
-tentative and should be changed according to weak points
-and goals. Train the main lifts hard, and don't be a
-hero on the assistance exercises—think like a
-bodybuilder. Keep the 5/3/1 principles in mind when
-running this program.
-
-5/3/1 Principles:
-- Emphasize big, multi-joint movements
-- Start too light
-- Progress slowly
-- Break personal records
+TODO
 README
 
 if lift.downcase == "readme"
@@ -24,22 +12,14 @@ if lift.downcase == "readme"
   exit 0
 end
 
-percentages = {
-  "1" => [0.65, 0.75, 0.85],
-  "2" => [0.70, 0.80, 0.90],
-  "3" => [0.75, 0.85, 0.95],
-  "4" => [0.40, 0.50, 0.60],
-}[week]
+START_PERCENT = 70
+INCREMENT = 2.5
 
-reps = {
-  "1" => [5, 5, 5],
-  "2" => [3, 3, 3],
-  "3" => [5, 3, 1],
-  "4" => [5, 5, 5],
-}[week]
+# TODO: handle deload week
+percentage = START_PERCENT + (week.to_i - 1) + INCREMENT
 
 vars_path = File.join(File.dirname(__FILE__), "vars.json")
-max = JSON.parse(File.read(vars_path)).dig("531", "maxes", lift).to_i
+max = JSON.parse(File.read(vars_path)).dig("transmission", "maxes", lift).to_i
 
 def ceil5(num)
   (num / 5.0).ceil * 5
@@ -48,16 +28,16 @@ end
 # Format date like "Saturday, January 1, 2022"
 frontmatter = <<~FRONTMATTER.strip
   date: #{Time.now.strftime('%A, %B %-d, %Y')}
-  program: 5/3/1 Triumvirate
+  program: Transmission
   week: #{week}
+  percentage: #{percentage}
   training-max: #{max}
-  deload: #{week == "4" ? "true" : "false"}
+  deload: #{week == "deload" ? "true" : "false"}
 FRONTMATTER
 
 sets = <<~SETS.strip
-  // #{ceil5(percentages[0] * max)}x#{reps[0]}
-  // #{ceil5(percentages[1] * max)}x#{reps[1]}
-  // #{ceil5(percentages[2] * max)}x#{reps[2]}
+  // 5x5, 4x4, 3x3, 2x2, or 1x1
+  // #{ceil5(max * percentage / 100)}x
 SETS
 
 workouts = {
@@ -67,11 +47,11 @@ workouts = {
     #{frontmatter}
     ---
 
-    # Front Squat
+    # SSB Squat
     #{sets}
     
     # Romanian Deadlift
-    // 5x10
+    // 3x6-10
 
     # Single Leg Calf Raise
     // 3 sets

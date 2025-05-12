@@ -1,10 +1,18 @@
 {
   "531": {
     "maxes": {
-      "squat": 205,
-      "bench": 205,
-      "deadlift": 365,
-      "press": 135
+      "squat": 215,
+      "bench": 215,
+      "deadlift": 375,
+      "press": 140
+    }
+  },
+  "transmission": {
+    "maxes": {
+      "squat": 275,
+      "bench": 245,
+      "deadlift": 425,
+      "press": 155
     }
   }
 }
