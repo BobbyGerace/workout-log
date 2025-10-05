@@ -127,7 +127,7 @@ workouts = {
     # Overhead Press
     #{sets}
 
-    # Dip
+    # Dumbbell Bench Press
     // 5x10-15
 
     # T-bar Row
