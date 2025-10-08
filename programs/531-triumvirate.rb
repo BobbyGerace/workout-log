@@ -91,11 +91,14 @@ workouts = {
     # Dumbbell Incline Bench
     // 5x10
 
-    # Inverted Row
+    & Inverted Row
     // 5x10
 
     # Dumbbell Curl
     // 3x20
+
+    & Dumbbell Overhead Triceps Extension
+    // 3x10-20
   BENCH
   "deadlift" => <<~DEADLIFT,
     ---
@@ -135,6 +138,9 @@ workouts = {
 
     # Lateral Raise
     // 3x20
+
+    & Hammer Curl
+    // 3x10-20
   PRESS
 }
 
