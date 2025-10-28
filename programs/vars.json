@@ -7,12 +7,12 @@
       "press": 140
     }
   },
-  "transmission": {
+  "fahves": {
     "maxes": {
-      "squat": 275,
-      "bench": 245,
-      "deadlift": 425,
-      "press": 155
+      "squat": 225,
+      "bench": 225,
+      "deadlift": 365,
+      "press": 135
     }
   }
 }
