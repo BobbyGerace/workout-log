@@ -136,16 +136,16 @@ workouts = {
     # Bench Press
     #{sets}
 
-    # Dumbbell Incline Bench
-    // 3x8-12
+    # Dumbbell Fly
+    // 3x15-20
 
     & Inverted Row
     // 3x10-20
 
-    # Dumbbell Curl
-    // 3x20
+    # Incline Curl
+    // 3x10-20
 
-    & Dumbbell Overhead Triceps Extension
+    & Lateral Raise
     // 3x10-20
   BENCH
   "deadlift" => <<~DEADLIFT,
@@ -161,7 +161,7 @@ workouts = {
     // 3x8-12
 
     # Single Leg Calf Raise
-    // 3x10
+    // 3 sets
 
     & Hanging Leg Raise
     // 3x10
@@ -176,13 +176,13 @@ workouts = {
     #{sets}
 
     # Dumbbell Bench Press
-    // 3x8-12
+    // 3x10-15
 
-    # T-bar Row
-    // 5x5-12
+    # Lat Pulldown
+    // 3x10-15
 
     # Lateral Raise
-    // 3x20
+    // 3x10-20
 
     & Hammer Curl
     // 3x10-20
