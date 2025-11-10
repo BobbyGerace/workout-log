@@ -56,11 +56,11 @@ percentages = {
   # volume block 1
   "1" => [0.75],
   "2" => [0.75, 0.8],
-  "3" => [0.75, 0.85],
+  "3" => [0.75, 0.8, 0.85],
   # volume block 2
   "4" => [0.8],
   "5" => [0.8, 0.85],
-  "6" => [0.8, 0.9],
+  "6" => [0.8, 0.85, 0.9],
   # intensity block
   "7" => [0.9, 0.8],
   "8" => [0.95, 0.9 ],
@@ -88,9 +88,7 @@ FRONTMATTER
 sets = if %w[1 2 3 4 5 6].include?(week)
   # volume blocks
   num_sets = (week.to_i - 1) % 3 + 3
-  init_weight = ceil5(percentages[0] * max)
-  top_weight = percentages[1] ? ceil5(percentages[1] * max) : nil
-  weight_range = top_weight.nil? ? init_weight.to_s : "#{init_weight} - #{top_weight}"
+  weight_range = percentages.map { |p| ceil5(p * max) }.join(' - ')
   sets = Array.new(num_sets, '5').join(',')
 
   "// #{weight_range}x#{sets}"
