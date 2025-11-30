@@ -176,7 +176,7 @@ workouts = {
     # Dumbbell Bench Press
     // 3x10-15
 
-    # Lat Pulldown
+    & Lat Pulldown
     // 3x10-15
 
     # Lateral Raise
