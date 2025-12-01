@@ -63,8 +63,8 @@ percentages = {
   "6" => [0.8, 0.85, 0.9],
   # intensity block
   "7" => [0.9, 0.8],
-  "8" => [0.95, 0.9 ],
-  "9" => [1, 0.95],
+  "8" => [0.95, 0.85],
+  "9" => [1, 0.9],
 }[week]
 
 raise "Invalid week number" if percentages.nil?
