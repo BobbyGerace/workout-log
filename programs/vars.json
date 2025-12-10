@@ -13,6 +13,7 @@
       "bench": 225,
       "deadlift": 365,
       "press": 135
-    }
+    },
+    "exercise_overrides": {}
   }
 }
