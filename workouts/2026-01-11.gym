@@ -1,0 +1,31 @@
+---
+name: Overhead Press
+date: Sunday, January 11, 2026
+program: Fahves
+week: 7
+training-max: 135
+deload: false
+---
+
+# Overhead Press
+// 125x5
+// 110x5,5
+125x5
+110x5,5
+
+# Dumbbell Bench Press
+// 3x10-15
+60x12,12,10
+
+& Lat Pulldown
+// 3x10-15
+205x12,12,8
+
+# Lateral Raise
+// 3x10-20
+20x20,10,7,6 { rest-pause }
+
+# Hammer Curl
+// 3x10-20
+30x12,5,4,4 { rest-pause }
+
