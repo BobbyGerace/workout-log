@@ -1,0 +1,17 @@
+---
+name: Squat
+date: <MOCKED_DATE>
+program: Fahves
+week: 6
+training-max: 225
+deload: false
+---
+
+# Front Squat
+// 180 - 195 - 205x5,5,5,5,5
+
+# Romanian Deadlift
+// 3x8-12
+
+# Single Leg Calf Raise
+// 3 sets

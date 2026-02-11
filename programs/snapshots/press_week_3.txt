@@ -1,0 +1,23 @@
+---
+name: Overhead Press
+date: <MOCKED_DATE>
+program: Fahves
+week: 3
+training-max: 135
+deload: false
+---
+
+# Overhead Press
+// 105 - 110 - 115x5,5,5,5,5
+
+# Dumbbell Bench Press
+// 3x10-15
+
+& Lat Pulldown
+// 3x10-15
+
+# Lateral Raise
+// 3x10-20
+
+& Hammer Curl
+// 3x10-20

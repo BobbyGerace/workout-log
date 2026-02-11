@@ -1,0 +1,20 @@
+---
+name: Deadlift
+date: <MOCKED_DATE>
+program: Fahves
+week: 2
+training-max: 365
+deload: false
+---
+
+# Deadlift
+// 275 - 295x5,5,5,5
+
+# Bulgarian Split Squat
+// 3x8-12
+
+# Single Leg Calf Raise
+// 3 sets
+
+& Hanging Leg Raise
+// 3x10
