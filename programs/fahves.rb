@@ -1,47 +1,8 @@
 require 'json'
+require_relative 'lib/util'
+require_relative 'lib/workout'
 
 VARS_PATH = File.join(File.dirname(__FILE__), "vars.json")
-
-class Workout
-  def initialize(day)
-    @day = day
-  end
-
-  def to_s
-    return readme if @day.downcase == "readme"
-    raise "Invalid day" unless day_names.key?(@day)
-    frontmatter + "\n\n" + exercises.map { |e| format_exercise(e) }.join
-  end
-
-  def day_names
-    raise NotImplementedError
-  end
-
-  def frontmatter
-    raise NotImplementedError
-  end
-
-  def exercises
-    raise NotImplementedError
-  end
-
-  def readme
-    "No readme defined"
-  end
-
-  private
-
-  def exercise_overrides
-    {}
-  end
-
-  def format_exercise(exercise)
-    name = exercise_overrides[exercise[:key]] || exercise[:name]
-    prefix = exercise[:superset] ? '&' : '#'
-    lines = exercise[:protocol].to_s.split("\n").map { |l| '// ' + l }.join("\n")
-    "#{prefix} #{name}\n#{lines}\n\n"
-  end
-end
 
 class MainLiftProtocol
   BACKOFF_SETS_INIT = 2
@@ -74,15 +35,15 @@ class MainLiftProtocol
 
   def volume
     num_sets = (@week.to_i - 1) % 3 + 3
-    weight_range = percentages.map { |p| ceil5(p * @training_max) }.join(' - ')
+    weight_range = percentages.map { |p| Util.ceil5(p * @training_max) }.join(' - ')
     sets = Array.new(num_sets, '5').join(',')
     "#{weight_range}x#{sets}"
   end
 
   def intensity
     num_backoff_sets = [BACKOFF_SETS_INIT - (@week.to_i - 1) % 3, 0].max
-    top_weight = ceil5(percentages[0] * @training_max)
-    backoff_weight = ceil5(percentages[1] * @training_max)
+    top_weight = Util.ceil5(percentages[0] * @training_max)
+    backoff_weight = Util.ceil5(percentages[1] * @training_max)
 
     sets = "#{top_weight}x5"
     sets += "+" if @week == "9"
@@ -91,7 +52,7 @@ class MainLiftProtocol
   end
 
   def deload
-    weight = ceil5(percentages[0] * @training_max)
+    weight = Util.ceil5(percentages[0] * @training_max)
     "#{weight}x5,5"
   end
 
@@ -105,9 +66,6 @@ class MainLiftProtocol
     end
   end
 
-  def ceil5(num)
-    (num / 5.0).ceil * 5
-  end
 end
 
 class Fahves < Workout
