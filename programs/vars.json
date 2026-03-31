@@ -15,5 +15,16 @@
       "press": 135
     },
     "exercise_overrides": {}
+  },
+  "olympus": {
+    "reps": 10,
+    "backoffs": 2,
+    "maxes": {
+      "squat": 205,
+      "bench": 195,
+      "deadlift": 335,
+      "press": 115
+    },
+    "exercise_overrides": {}
   }
 }
