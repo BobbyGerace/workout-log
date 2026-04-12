@@ -28,4 +28,34 @@ module Protocols
       end
     end
   end
+
+  class FiveThreeOneProtocol
+    PERCENTAGES = {
+      "1" => [0.65, 0.75, 0.85],
+      "2" => [0.70, 0.80, 0.90],
+      "3" => [0.75, 0.85, 0.95],
+      "4" => [0.40, 0.50, 0.60],
+    }
+
+    REPS = {
+      "1" => [5, 5, 5],
+      "2" => [3, 3, 3],
+      "3" => [5, 3, 1],
+      "4" => [5, 5, 5],
+    }
+
+    def initialize(training_max, week)
+      @training_max = training_max
+      @week = week
+      raise "Invalid week number" if PERCENTAGES[@week].nil?
+    end
+
+    def to_s
+      PERCENTAGES[@week].zip(REPS[@week]).map.with_index do |(pct, rep), i|
+        weight = Util.ceil5(pct * @training_max)
+        amrap = (@week != "4" && i == 2) ? '+' : ''
+        "#{weight}x#{rep}#{amrap}"
+      end.join("\n")
+    end
+  end
 end
