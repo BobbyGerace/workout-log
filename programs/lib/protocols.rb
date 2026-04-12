@@ -17,8 +17,9 @@ module Protocols
 
     def to_s
       if @week == "4" || @week == "deload"
+        reps = (@reps * 0.67).floor
         weight = Util.ceil5(@goal_weight * 0.80)
-        "#{weight}x#{Array.new(@backoffs, @reps).join(',')}"
+        "#{weight}x#{Array.new(@backoffs, reps).join(',')}"
       else
         top = Util.ceil5(@goal_weight * TOP_PERCENTAGES[@week])
         plus = @week == "3" ? '+' : ''
