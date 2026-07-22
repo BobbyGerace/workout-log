@@ -1,0 +1,24 @@
+---
+name: Bench Press
+date: Wed, Jul 22, 2026
+---
+
+# Bench Press
+135x10
+155x10,10
+
+# Dumbbell Overhead Press
+35x15,12,12
+
+& Lat Pulldown
+180x15,12,12
+
+# Barbell Curl
+45x20,18,17
+
+& Barbell Overhead Triceps Extension
+45x20,20,20
+
+# Band Knee Lifts
+// Doing this for hip rehab
+{ band: mini } x15,15,15
