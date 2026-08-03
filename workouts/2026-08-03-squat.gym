@@ -1,0 +1,14 @@
+---
+name: Squat
+date: Mon, Aug 03, 2026
+---
+
+# Box Front Squat
+// Slightly above parallel for hip rehab
+135x10,10,10 { box-height: 17 }
+
+# Romanian Deadlift
+225x10,10,10
+
+# Burpee
+x5,5,5 { rest: 120 }
