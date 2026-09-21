@@ -1,0 +1,20 @@
+---
+name: Squat
+date: Mon, Sep 21, 2026
+---
+
+# Box Front Squat
+185x5,5,5 { box-height: 15 }
+
+# Assisted Nordic Curl
+// Used two purples linked together. 
+// gonna progress by gripping the band lower, so
+// not gonna bother logging that
+BWx8,8,8
+
+# Monster walk
+80ft { band: mini } 3 sets
+
+& Cossack Squats
+// These are alternating and the reps are total, not per leg
+BWx10,20,20
