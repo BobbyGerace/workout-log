@@ -1,0 +1,20 @@
+---
+name: Squat
+date: Mon, Oct 05, 2026
+---
+
+# Box Front Squat
+185x1 { box-height: 15}
+135x5,5,5 { box-height: 15}
+
+# Assisted Nordic Curl
+x10,10 { band: linked-purple }
+
+# Monster walk
+80ft { band: light } 3 sets
+
+& Cossack Squats
+BWx20,20,20
+
+# Single Leg Calf Raise
+BWx15,15,15
