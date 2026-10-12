@@ -1,0 +1,22 @@
+---
+name: Squat
+date: Mon, Oct 12, 2026
+---
+
+# Box Front Squat
+// Easy and painless with a narrow knees-forward stance. Might 
+// increase the ROM next time
+135x5,5,5,5,5 { box-height: 15}
+
+# Assisted Nordic Curl
+x10,10,10 { band: linked-purple }
+
+# Single Leg Hip Thrust
+25x10,10,10
+
+# Single Leg Calf Raise
+BWx18,17,15
+
+& Hanging Leg Raise
+BWx10,10,10
+
