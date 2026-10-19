@@ -1,0 +1,14 @@
+---
+name: Squat
+date: Mon, Oct 19, 2026
+---
+
+# Box Front Squat
+205x2 { box-height: 15}
+135x10,10,10
+
+# Assisted Nordic Curl
+x10,11,11 { band: linked-purple }
+
+# Single Leg Calf Raise
+BWx18,15,15
